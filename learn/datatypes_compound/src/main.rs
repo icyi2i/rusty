@@ -75,4 +75,25 @@ fn main() {
 
     let slice_from_1_to_3 = &numbers_till_5[1..4];
     println!("Numbers from 1 to 3 {:?}", slice_from_1_to_3);
+
+    // ================================================================
+    // STRINGS
+    // ================================================================
+    // String allocates memory on a heap and store valid utf-8 sequences.
+    let name = String::from("Luffy");
+    println!("{}", name);
+
+    let name = "Luffy".to_string();
+    println!("{}", name);
+
+    // String slice does not allocate memory on heap.
+    // It references a portion of slice via address.
+    // String slices can be used for arguments for a function.
+    let shortname = &name[0..2];
+    println!("{}", shortname);
+
+    // String literals are special strings
+    // which can contain characters besides valid utf-8 set
+    let rust_name = "\x52\x75\x73\x74";
+    println!("{}", rust_name);
 }
