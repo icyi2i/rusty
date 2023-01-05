@@ -1,5 +1,5 @@
 [package]
-name = "variables"
+name = "datatypes_compound"
 version = "0.1.0"
 edition = "2021"
 
