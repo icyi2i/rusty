@@ -63,4 +63,16 @@ fn main() {
     // To generate a series of numbers
     let numbers_till_5: Vec<i32> = (0..5).collect();
     println!("Numbers till 5 {:?}", numbers_till_5);
+
+    // ================================================================
+    // SLICES
+    // ================================================================
+    // Slices are portions of a bigger collection that can be used
+    // instead of refrencing the complete collection
+
+    let numbers_till_5: Vec<i32> = (0..5).collect();
+    println!("Numbers till 5 {:?}", numbers_till_5);
+
+    let slice_from_1_to_3 = &numbers_till_5[1..4];
+    println!("Numbers from 1 to 3 {:?}", slice_from_1_to_3);
 }
